@@ -7,14 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
     <link rel="icon" href="./images/icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
     <!--header -->
     <header>
         <div class="container header">
@@ -29,8 +31,26 @@
                 </ul>
             </nav>
             <ul class="auth-nav">
-                <li class="auth-item"><a href="tel:+380635465454" class="contact">+380 63 546 54 54</a></li>
-                <li class="auth-item"><a href="mailto:foreva@gmail.com" class="contact">foreva@gmail.com</a></li>
+                <li class="auth-item">
+                    <a href="mailto:foreva@gmail.com" class="contact">
+                        <div class="auth-icon">
+                            <svg class="auth-item-icon envelope" width="16px" height="12px">
+                                <use href="./images/symbol-defs.svg#envelope"></use>
+                            </svg>
+                            foreva@gmail.com
+                        </div>
+                    </a>
+                </li>
+                <li class="auth-item">
+                    <a href="tel:+380635465454" class="contact">
+                        <div class="auth-icon">
+                            <svg class="auth-item-icon smartphone" width="12px" height="16px">
+                                <use href="./images/symbol-defs.svg#smartphone"></use>
+                            </svg>
+                        +380 63 546 54 54
+                        </div>
+                    </a>
+                </li>
             </ul>
         </div>
     </header>
@@ -38,51 +58,53 @@
     <main>
         <!-- section hero -->
         <section class="section hero overlay">
-                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero-button">Заказать услугу</button>
         </section>
 
         <!-- section about -->
         <section class="section about">
             <div class="container">
-                <div class="about-icon">
-                    <ul class="about-icon-list">
-                        <li class="about-icon-item">
+                <ul class="about-list">
+                    <li class="about-item">
+                        <div class="about-icon">
                             <svg class="about-item-icon">
-                            <use href="./images/symbol-defs.svg#antenna"></use>
-                        </svg></li>
-                        <li class="about-icon-item">
+                                <use href="./images/symbol-defs.svg#antenna"></use>
+                            </svg>
+                        </div>
+                        <h3 class="about-title section-title">Внимание к деталям</h3>
+                        <p class="about-text section-text">Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.</p>
+                    </li>
+                    <li class="about-item">
+                        <div class="about-icon">
                             <svg class="about-item-icon">
-                            <use href="./images/symbol-defs.svg#clock"></use>
-                        </svg></li>
-                        <li class="about-icon-item">
+                                <use href="./images/symbol-defs.svg#clock"></use>
+                            </svg>
+                        </div>
+                        <h3 class="about-title section-title">Пунктуальность</h3>
+                        <p class="about-text section-text">Задача организации, в особенности же рамки и место обучения
+                            кадров влечет за собой.</p>
+                    </li>
+                    <li class="about-item">
+                        <div class="about-icon">
                             <svg class="about-item-icon">
                                 <use href="./images/symbol-defs.svg#diagram"></use>
                             </svg>
-                        </li>
-                        <li class="about-icon-item">
+                        </div>
+                        <h3 class="about-title section-title">Планирование</h3>
+                        <p class="about-text section-text">Равным образом консультация с широким активом в значительной
+                            степени обуславливает.</p>
+                    </li>
+                    <li class="about-item">
+                        <div class="about-icon">
                             <svg class="about-item-icon">
                                 <use href="./images/symbol-defs.svg#astronaut"></use>
                             </svg>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="about-list">
-                    <li class="about-item">
-                        <h3 class="about-title section-title">Внимание к деталям</h3>
-                        <p class="about-text section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li class="about-item">
-                        <h3 class="about-title section-title">Пунктуальность</h3>
-                        <p class="about-text section-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li class="about-item">
-                        <h3 class="about-title section-title">Планирование</h3>
-                        <p class="about-text section-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li class="about-item">
+                        </div>
                         <h3 class="about-title section-title">Современные технологии</h3>
-                        <p class="about-text section-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                        <p class="about-text section-text">Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.</p>
                     </li>
                 </ul>
             </div>
@@ -141,6 +163,58 @@
                 </ul>
             </div>
         </section>
+
+        <!-- section clients -->
+        <section class="clients">
+            <div class="container">
+                <h2 class="clients-title section-title">Постоянные клиенты</h2>
+                <ul class="clients-list">
+                    <li class="clients-item">
+                        <a href="">
+                            <svg class="clients-icon">
+                                <use href="./images/symbol-defs.svg#Client-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="">
+                            <svg class="clients-icon">
+                                <use href="./images/symbol-defs.svg#Client-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="">
+                            <svg class="clients-icon">
+                                <use href="./images/symbol-defs.svg#Client-3"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="">
+                            <svg class="clients-icon">
+                                <use href="./images/symbol-defs.svg#Client-4"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="">
+                            <svg class="clients-icon">
+                                <use href="./images/symbol-defs.svg#Client-5"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="clients-item">
+                        <a href="">
+                            <svg class="clients-icon">
+                                <use href="./images/symbol-defs.svg#Client-6"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
     </main>
     <!-- footer -->
     <footer class="footer">
