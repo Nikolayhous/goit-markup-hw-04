@@ -55,7 +55,6 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
   color: var(--title-nav-filter-color);
   }
@@ -193,11 +192,6 @@ header {
     rgba(47, 48, 58, 0.4)  
     ), url(../images/bg-img-hero.jpg);
     background-position: center;
-    /* padding-top: 200px;
-    padding-bottom: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
 }
 
 .hero-title {
@@ -208,6 +202,7 @@ header {
   letter-spacing: 0.06em;
   text-align: center;
   max-width: 696px;
+  text-transform: uppercase;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;  
@@ -242,6 +237,13 @@ header {
   padding-top: 94px;
 }
 
+.about-title {
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
 .about-list {
   display: flex;
   margin-top: -30px;
@@ -257,9 +259,11 @@ header {
 }
 
 .about-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--bg-team-portfolio-icon-filter-color);
   height: 120px;
-  padding: 25px 100px;
   margin-bottom: 30px;
   border-radius: 4px;
 }
@@ -270,18 +274,11 @@ header {
   height: 70px;
 }
 
-.about-title {
-  font-size: 14px;
-  line-height: 1.14;
-  margin-bottom: 10px;
-}
 
 /* section work */
 
 .work-title {
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
 }
 
@@ -360,7 +357,6 @@ header {
 .team-social-item {
   max-width: 44px;
   height: 44px;
-  margin-top: 10px; 
   margin-left: 10px;
   flex-basis: calc((100% - 40px) / 4);
   background-color: #ffffff;
@@ -617,6 +613,13 @@ header {
   margin-top: 30px; 
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
+}
+
+.projects-item:hover,
+.projects-item:focus {
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-list a {
