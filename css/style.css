@@ -355,20 +355,19 @@ header {
 }
 
 .team-social-item {
-  max-width: 44px;
-  height: 44px;
   margin-left: 10px;
   flex-basis: calc((100% - 40px) / 4);
-  background-color: #ffffff;
+  background-color: transparent;
 }
 
+
 .team-link-icon {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 100%;
-  height: 100%;
+  height: 44px;
   fill: #afb1b8;
 }
 
@@ -403,8 +402,6 @@ header {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 180px) / 6);
-  width: 170px;
-  height: 90px;
 }
 
 .company-1 {
@@ -437,8 +434,8 @@ header {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  border: 1px solid #AFB1B8;
+  height: 90px;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
 }
@@ -491,18 +488,23 @@ header {
 }
 
 
-.address-list .map {
+.footer .contact-link.map {
   color: var(--title-footer-color);
   font-style: normal;
   line-height: 1.7;
   text-decoration: none;
 }
 
-.address-list .contact {
+.footer .contact-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   line-height: 1.7;
   text-decoration: none;
+}
+
+.footer .contact-link:hover,
+.footer .contact-link:focus {
+  color: var(--button-hover-color);
 }
 
 .footer-title {
@@ -527,7 +529,7 @@ header {
 
 
 .footer-link-icon {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -585,7 +587,6 @@ header {
   border: none;
   cursor: pointer;
   padding: 6px 22px;
-
   border-radius: 4px;
 }
 
@@ -618,11 +619,10 @@ header {
 .projects-item:hover,
 .projects-item:focus {
   border: 1px solid #EEEEEE;
-  box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.projects-list a {
+.projects-link {
   text-decoration: none;
 }
 
